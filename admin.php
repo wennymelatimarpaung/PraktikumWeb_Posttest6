@@ -15,7 +15,7 @@
         <table>
             <thead>
                 <tr>
-                    <th colspan="6" class="thead">
+                    <th colspan="7" class="thead">
                         <h3 class="center">Daftar Menu</h3>
                     </th>
                         <a href="formulir.php" class="tambah">Tambah Menu</a>
@@ -24,6 +24,8 @@
                     <th>ID</th>
                     <th nowrap>Nama Menu</th>
                     <th>Harga</th>
+                    <th>Tanggal Upload</th>
+                    <th>Gambar Menu</th>
                     <th colspan="2">Action</th>
                 </tr>
             </thead>
@@ -38,6 +40,8 @@
                         <td><?= $i ?></td>
                         <td nowrap><?=$row['nama_menu']?></td>
                         <td><?=$row['harga']?></td>
+                        <td><?=$row['tgl_upload']?></td>
+                        <td><img src="image/<?=$row['gambar_menu']?>" alt="" width="100px"></td>
                         <td class="edit">
                             <a href="edit.php?id=<?=$row['id']?>">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
